@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="description" content="不超过150个字符" />
+		<meta name="keywords" content="" />
+		<meta content="caibaojian" name="author" />
+		<title>my-ele-app</title>
+		<link rel="stylesheet" type="text/css" href="static/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_497426_ak4p3jw81q2p4x6r.css">
+		<script src="static/js/flexible.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//ios8向下兼任1px
+			if(/iP(hone|od|ad)/.test(navigator.userAgent)) {
+				var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/),
+					version = parseInt(v[1], 10);
+				if(version >= 8) {
+					document.documentElement.classList.add('hairlines')
+				}
+			};
+		</script>
+	</head>
+
+	<body>
+		<div id="app"></div>
+		<!-- built files will be auto injected -->
+	</body>
+
+</html>
